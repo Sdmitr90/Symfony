@@ -102,6 +102,7 @@ class User implements PasswordAuthenticatedUserInterface, UserInterface
 
     public function getRoles()
     {
+        return ['ROLE_USER'];
         // TODO: Implement getRoles() method.
     }
 
@@ -117,6 +118,7 @@ class User implements PasswordAuthenticatedUserInterface, UserInterface
 
     public function getUsername()
     {
+        return $this->email;
         // TODO: Implement getUsername() method.
     }
 
